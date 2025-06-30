@@ -1,0 +1,66 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+# Vue Notes App - Component Library
+
+Welcome to the Vue Notes App component library! This Storybook contains all the components used in our note-taking application.
+
+## Overview
+
+Vue Notes is a modern, responsive note-taking application built with Vue 3, TypeScript, and Tailwind CSS. It provides a clean interface for creating, organizing, and managing your notes with features like:
+
+- **Note Management**: Create, edit, delete, and duplicate notes
+- **Organization**: Categorize notes and add tags for better organization
+- **Search & Filter**: Powerful search and filtering capabilities
+- **Pin Important Notes**: Keep important notes at the top
+- **Responsive Design**: Works seamlessly across all device sizes
+
+## Components
+
+### Core Components
+
+- **NoteCard**: Displays individual notes with actions
+- **NoteEditor**: Modal for creating and editing notes
+- **SearchFilter**: Comprehensive search and filtering interface
+- **EmptyState**: Displays when no content is available
+
+### Design System
+
+The application uses a consistent design system with:
+
+- **Colors**: Primary (indigo), Secondary (emerald), Accent (amber)
+- **Typography**: Clear hierarchy with proper spacing
+- **Spacing**: 8px grid system for consistent layouts
+- **Animations**: Subtle transitions and micro-interactions
+
+## Getting Started
+
+To run the application:
+
+```bash
+pnpm dev
+```
+
+To run Storybook:
+
+```bash
+pnpm storybook
+```
+
+To run tests:
+
+```bash
+pnpm test
+```
+
+## Architecture
+
+The application follows Vue 3 composition API patterns with:
+
+- **Composables**: Reusable logic with `useNotes`
+- **TypeScript**: Full type safety throughout
+- **Local Storage**: Persistent data storage
+- **Modular Components**: Clean separation of concerns
+
+Explore the components in this Storybook to see how they work individually and understand their props and behaviors.
