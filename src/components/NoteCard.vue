@@ -88,7 +88,6 @@ interface Props {
   categories: Category[];
 }
 
-defineProps<Props>();
 defineEmits<{
   edit: [note: Note];
   delete: [id: string];
