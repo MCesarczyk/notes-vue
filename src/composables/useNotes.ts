@@ -11,12 +11,12 @@ const loadFromStorage = <T>(key: string, defaultValue: T): T => {
     const stored = localStorage.getItem(key);
     if (stored) {
       const parsed = JSON.parse(stored);
-      if (Array.isArray(parsed)) {
+      if (Array.isArray(parsed) && Array.isArray(defaultValue)) {
         return parsed.map(item => ({
           ...item,
           createdAt: new Date(item.createdAt),
           updatedAt: new Date(item.updatedAt)
-        }));
+        })) as T;
       }
       return parsed;
     }
