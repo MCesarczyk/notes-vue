@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/composables/useNotes.ts","./src/types/index.ts","./src/App.vue","./src/components/EmptyState.vue","./src/components/HelloWorld.vue","./src/components/NoteCard.vue","./src/components/NoteEditor.vue","./src/components/SearchFilter.vue"],"version":"5.8.3"}

@@ -83,7 +83,7 @@
                 <span
                   v-for="tag in form.tags"
                   :key="tag"
-                  class="inline-flex items-center gap-1 px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm"
+                  class="inline-flex items-center gap-1 px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm"
                 >
                   {{ tag }}
                   <button

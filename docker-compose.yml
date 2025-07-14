@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   vue-notes:
     build:
@@ -20,6 +18,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 30s
+    profiles:
+      - prod
 
   # Optional: Add a development service
   vue-notes-dev:
@@ -37,3 +37,14 @@ services:
       - NODE_ENV=development
     profiles:
       - dev
+
+  vue-notes-ghcr:
+    image: ghcr.io/mcesarczyk/notes-vue:latest
+    ports:
+      - "5174:80"
+    container_name: vue-notes-ghcr
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    profiles:
+      - ghcr
